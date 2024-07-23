@@ -7,3 +7,9 @@ with open("dados_usuario.txt", "w") as arquivo:
           arquivo.write(f"Nome: {nome}\n")
           arquivo.write(f"Idade: {idade}\n")
 print("Dados salvos com sucesso!")
+with open ("dados_usuario.txt", "r") as arquivo:
+        #Lê o conteúdo do arquivo
+        conteudo = arquivo.read()
+#Exibe o conteúdo lido
+print("Conteúdo do arquivo:")
+print(conteudo)
